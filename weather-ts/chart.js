@@ -7,9 +7,14 @@ async function drawLineChart() {
 
     // use accessor functions to obtain relevant points
     const yAccessor = d => d.temperatureMax
+
     // use d3 to parse date
     const dateParser = d3.timeParse("%Y-%m-%d") 
     const xAccessor = d => dateParser(d.date)
+
+    console.log(yAccessor)
+    console.log(xAccessor)
+
 }  
 
 drawLineChart()
